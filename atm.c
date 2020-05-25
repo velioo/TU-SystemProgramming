@@ -224,14 +224,10 @@ int start_ui(int socket, char *pin_code)
         //printf("Error while processing cash receipt.\n");
         return status_code;
     }
-	// TODO:
-	// On success ask the user if he wants a cash receipt. If yes then send request to bank server and the print the response.
-	// 2. Terminate connection with the bank server and print farewall message to user.
 
 	//printf("Exiting ATM UI...\n");
     return 0;
 }
-
 
 int validate_card(int socket)
 {

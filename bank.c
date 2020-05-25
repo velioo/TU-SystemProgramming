@@ -191,9 +191,6 @@ void *processRequest (void *socket_fd)
 	withdraw_sum(socket, bank_card, sum_for_withdraw);
 	send_response_status_msg(socket, SUM_SUCCESSFULLY_DEPOSITED_MSG);
 	cash_receipt(socket, bank_card->account.balance, sum_for_withdraw);
-	// TODO:
-	// 2. receive answer if client needs cash receipt, if yes, then send how much sum if left in the account and current date
-	// 3. end communication with atm
 
 	printf("Ending connection with ATM...\n");
 	terminate_connection(socket);
